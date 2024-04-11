@@ -1,0 +1,222 @@
+/* css style for homepage en/fr */
+
+/* building a responsive grid-view */
+* {
+  box-sizing: border-box;
+}
+
+/* for mobile phones */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+@media only screen and (min-width:  600px) {
+  /* For tablets */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width:  768px) {
+  /* create 12 columns for responsive grid-view */
+  /* For desktop */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+.row::after {
+  content: "";
+  clear:  both;
+  display: table;
+}
+
+html {
+  font-family: "Helvetica", sans-serif;
+  background-color: #f5f5f5;
+  margin: 0px;
+}
+
+body {
+  margin: 0px;
+}
+
+/*------------------------------------NAV--------------------------------*/
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #32C5E6;
+  color: white;
+
+}
+
+.rightnav {
+  text-align: right;
+  background-color: #32C5E6;
+  color: white;
+  float: right;
+  overflow: hidden;
+
+}
+
+.dropdown .dropbtn {
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  font-size: inherit;
+  margin: 0; /* Important for vertical align on mobile phones */
+
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+
+/* -------------------------------The hero image------------------------------------------*/
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background-image.jpeg');
+
+  /* Set a specific height */
+  height: 50%;
+
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 3.5vw;
+  white-space: nowrap;
+
+}
+
+.hero-text-2{
+	font-size: 2.5vw;
+  margin-bottom: 8%;
+}
+
+
+/*-----------------------------BODY---------------------------------*/
+
+.body-text {
+	margin: 30px;
+
+}
+
+/*------------------------------FOOTER------------------------------*/
+.footer {
+  font-size: 12px;
+  opacity: 0.5;
+  Text-align: center;
+  Padding: 30px;
+
+}
+
+/*------------------------------TAB----------------------------------*/
+.tab {
+  display: inline-block;
+  margin-left: 40px;
+
+}
+
+/*---------------------SPACING FOR SECONDARY INFO---------------------*/
+.secondary-info {
+  display: inline-block;
+  margin-left: 160px;
+  margin-top: -10px;
+  font-size: inherit;
+
+  /*responsive*/
+  margin-left: 10vw;
+
+}
+
+
+/*----------------------ADJUST UNORDERED LIST------------------------*/
+.ul-skills {
+  columns: 100px 3;
+
+}
